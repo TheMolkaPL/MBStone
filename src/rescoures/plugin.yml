@@ -1,0 +1,9 @@
+main: pl.mbstone.inder00.Main
+version: 1.0
+name: MBStone
+author: Inder00
+commands:
+  lvl:
+    description: Komenda pluginu MB_Stone
+  mbstone:
+    description: Komenda pluginu MB_Stone
