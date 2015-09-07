@@ -4,3 +4,50 @@
 
 # Regeneracja stone
 regenerate: 30
+
+msg:
+  toPlayer:
+  
+    # Zmienne: {POZIOM}, {PLAYER}
+    nextLVL: '&7Awansowales na kolejny poziom (&6{POZIOM}&7).'
+    
+    # Zmienne: {UPRAWNIENIE}
+    noPermissions: '&cBrak uprawnien ({UPRAWNIENIE})'
+  broadcast:
+  
+    # Zmienne: {POZIOM}, {PLAYER}
+    nextLVL: '&7Gracz &6{PLAYER} &7AWANSOWAL NA KOLEJNY POZIOM (&6{POZIOM}&7)'
+    
+onChat:
+
+  # Wlączanie mozliwosci pisania od X levelu
+  enable: true
+  
+  # Od ktorego levelu mozna pisac na chacie
+  chatLVL: 30
+  
+  # Wiadomosc, gdy gracz nie ma wymaganego levelu
+  # Zmienne: {POZIOM}
+  requestLVL: '&cAby pisac na chacie musisz zdobyc {POZIOM} poziom'
+  
+nextLVL:
+  
+  # Ile jest potrzebne wykopanego stone do kolejnego stone (liczone "TWOJLVL*BREAKEDSTONE")
+  breakedStone: 1200
+
+format:
+
+  # Format komend
+  commands:
+  
+    #Format do uprawnienia "MBSTONE.LVL" od komendy "/lvl"
+    cmdLVL:
+      
+      # Format wiadomosci
+      formatSend: '&c{UPRAWNIENIE}'
+      
+    #Format do uprawnienia "MBSTONE.ADMIN" od komendy "/mbstone"
+    cmdMBStone:
+      
+      # Format wiadomosci
+      formatSend: '&c{UPRAWNIENIE}'
