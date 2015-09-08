@@ -4,6 +4,7 @@ name: MBStone
 author: Inder00
 commands:
   lvl:
-    description: Komenda pluginu MBStone
+    description: 'Pokaz Twoj poziom kopania'
+    aliases: [level, mbstonelvl, mvstonelevel]
   mbstone:
-    description: Komenda pluginu MBStone
+    description: 'Zarzadzanie pluginem MBStone'
